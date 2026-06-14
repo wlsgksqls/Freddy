@@ -1028,12 +1028,7 @@ function drawMiniMap(){
     px(c.mx-28, c.my-13, 56, 26, active?'#4f8a4f':'#2c2832');
     text('CAM '+c.id, c.mx, c.my+5, 12, active?'#eaffea':'#9a9aa6', 'center');
   }
-  // Foxy alert
-  if(game.foxyEscaped){
-    if(Math.floor(game.time*4)%2===0){
-      text('! PIRATE COVE EMPTY !', p.x+p.w/2, p.y+p.h-10, 18, '#f33', 'center');
-    }
-  }
+  // (no Foxy warning here — the player must actually check Pirate Cove)
 }
 
 function drawRoom(cam){
